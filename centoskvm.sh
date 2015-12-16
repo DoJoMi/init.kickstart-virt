@@ -9,6 +9,6 @@ virt-install \
 --accelerate \
 --hvm \
 --disk path=/var/lib/libvirt/images/centos.qcow2,format=qcow2,bus=virtio,cache=none \
---extra-args="ks=https://raw.githubusercontent.com/DoJoMi/ks_virt/master/ks.cfg text console=tty0 console=ttyS0,115200n8 serial"
+--extra-args="ks=https://raw.githubusercontent.com/DoJoMi/ks_virt/master/ks.cfg text console=tty0 console=ttyS0,115200n8 serial" \
 --noreboot \
 --force
