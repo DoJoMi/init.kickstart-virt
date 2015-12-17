@@ -1,2 +1,12 @@
+info
+------
 
+```
+if
+--network bridge=kvm \
+is deleted inside
+--> centoskvm.sh
+it would work by default address {virbr0}
+
+```
 
