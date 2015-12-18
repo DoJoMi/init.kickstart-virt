@@ -2,10 +2,10 @@ info
 ------
 
 ```
-if
---network bridge=kvm \
-is deleted inside
---> centoskvm.sh
-it would work by default address {virbr0}
+--network bridge=kvm \ can changed to standard --network bridge=virbr0 \
+if nothing is defined default address {virbr0 --> 192.168.122.*}
+
+centos_lvm   --> --network bridge=kvm
+centos_btrfs --> --network bridge=virbr0
 ```
 
