@@ -1,13 +1,12 @@
-info
-------
+**info**
+
 
 ```
 --network bridge=kvm \ can changed to standard --network bridge=virbr0 \
 if nothing is defined default address {virbr0 --> 192.168.122.*}
 ```
 
-installation
--------------
+**installation**
 
 ```bash
 btrfs:
