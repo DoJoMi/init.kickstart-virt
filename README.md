@@ -10,6 +10,7 @@ if nothing is defined default address {virbr0 --> 192.168.122.*}
 
 ```bash
 btrfs:
+--------
 --network bridge=virbr0 --> standard configuration
 
 sudo wget https://raw.githubusercontent.com/DoJoMi/ks_virt/master/centos_btrfs.sh -O - > file &&  sudo sh file centos
@@ -17,8 +18,8 @@ sudo wget https://raw.githubusercontent.com/DoJoMi/ks_virt/master/centos_btrfs.s
 uname:dojomi
 pwd: dojomi
 
-
 lvm:
+--------
 --network bridge=kvm --> own created bridge network
 
 sudo wget https://raw.githubusercontent.com/DoJoMi/ks_virt/master/centos_lvm.sh -O - > file &&  sudo sh file centos
