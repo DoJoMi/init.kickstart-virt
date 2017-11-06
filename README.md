@@ -14,7 +14,7 @@ qemu-img create -f qcow2 -o preallocation=metadata /var/lib/libvirt/images/cento
 to
 --network bridge=virbr0 \
 
-if nothing is defined, the default address will be configured virbr0 --> 192.168.122.*
+if nothing is defined, the default address will be configured virbr0 --> f.e 192.168.122.*
 ```
 
 **installation**
@@ -39,3 +39,21 @@ uname:dojomi
 pwd: dojomi
 
 ```
+
+**after full installation**
+
+```
+# start the machine
+virsh --connect qemu:///system start centos
+# show running machines
+virsh --connect qemu:///system list
+# connect to the machine via console
+virsh --connect qemu:///system  console centos
+ENTER
+# to leave from console
+CRTL+5
+# or connect via ssh
+f.e ssh dojomi@192.168.122.2
+
+```
+
