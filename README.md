@@ -1,3 +1,10 @@
+**disk-creation**
+
+```
+# create the disk before run the previous command
+qemu-img create -f qcow2 -o preallocation=metadata /var/lib/libvirt/images/centos.qcow2 11G 
+````
+
 **info**
 
 
