@@ -54,6 +54,10 @@ ENTER
 CRTL+5
 # or connect via ssh
 f.e ssh dojomi@192.168.122.2
+# remove the created image
+virsh -c qemu:///system shutdown centos
+virsh -c qemu:///system undefine centos
+rm /var/lib/libvirt/images/centos.qcow2
 
 ```
 
