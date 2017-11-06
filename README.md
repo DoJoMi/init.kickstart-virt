@@ -2,7 +2,7 @@
 
 
 ```
-#can changed to standard bridge inside the .cfg files
+#bridge can be changed inside the .cfg files
 --network bridge=kvm
 to
 --network bridge=virbr0 \
