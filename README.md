@@ -2,8 +2,12 @@
 
 
 ```
---network bridge=kvm \ can changed to standard --network bridge=virbr0 \
-if nothing is defined default address {virbr0 --> 192.168.122.*}
+#can changed to standard bridge inside the .cfg files
+--network bridge=kvm
+to
+--network bridge=virbr0 \
+
+if nothing is defined, the default address will be configured virbr0 --> 192.168.122.*
 ```
 
 **installation**
