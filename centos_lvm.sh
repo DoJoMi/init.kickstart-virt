@@ -8,7 +8,7 @@ virt-install \
 --location=http://mirror.easyname.at/centos/7/os/x86_64/  \
 --accelerate \
 --hvm \
---network bridge=enp35s0.4000@enp35s0\
+--network bridge=enp35s0.4000\
 --disk path=/var/lib/libvirt/images/centos.qcow2,format=qcow2,bus=virtio,cache=none \
 --extra-args="ks=https://raw.githubusercontent.com/DoJoMi/ks_virt/master/ks_lvm.cfg text console=tty0 console=ttyS0,115200n8 serial" \
 --noreboot \
